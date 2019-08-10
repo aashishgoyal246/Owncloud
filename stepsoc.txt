@@ -1,0 +1,9 @@
+1. Make sure that you are in owncloud folder then only do following steps
+
+2. Instance should be RHEL 8 with security groups ssh and webserver (80 and 443)
+
+3. Change in file /etc/httpd/conf/httpd.conf => < Directory /var/www/html/ > line in which AllowOverride None change to AllowOverride All and save the file and then systemctl restart httpd
+
+4. Then go to the owncloud page do required configurations and choose database to mysql and then login then afterwards go to settings enable external storage in admin then choose Amazon S3 then enter bucket name ( make sure that bucket is already created ) then enter the region where bucket is created then add IAM user access key and secret key but user should have s3 access to it then it will show green light 
+
+5. Start working on it upload files to Folder then it will also show in your bucket

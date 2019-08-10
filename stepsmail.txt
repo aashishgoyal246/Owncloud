@@ -1,0 +1,9 @@
+1. Make sure you are in owncloud folder always
+
+2. Run the "awsconf.sh" script with command "sh awsconf.sh" to configure aws cli on your server and the IAM user should have access to S3, SNS
+
+3. Then run the "mail.sh" script with command "sh mail.sh" to subscribe to mail and please provide valid mail and then a confirmation link will be sent to your mail id then confirm it 
+
+4. Then run the "aws.sh" script with command "sh aws.sh" make sure that bucket and file is already created and don't use columns while giving path of file, if file is in folder then give like this - NameOfFolder/FileName
+
+5. Then check your mail that a link will come where you can view or download the file
